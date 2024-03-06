@@ -1,5 +1,5 @@
 # Portfolio
 
-Just my 3rd portfolio site generated using `BaayMax`
+Apenas meu portfolio, com seus devidos commits, gerados com `BaayMax`
 
-<img src="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true">
+<img src="https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Foto%20Para%20Metatag.JPG?raw=true">

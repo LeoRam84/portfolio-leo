@@ -2,42 +2,42 @@
     "projects":[
         {
             "title": "Loja Virtual",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Loja%20Virtual.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Loja%20Virtual.JPG",
             "project_url": "https://black-nextjs-delta.vercel.app/",
             "description": "Esse projeto simula uma loja virtual de artigos eletrônicos como tablets, computadores, celulares e relógios inteligentes. Tente adicionar e remover itens do carrinho. Foi criado com o Next.js e teve seu deploy feito no site da Vercel",
             "tags": [ "JavaScript", "TypeScript", "React.js" ]
         },
         {
             "title": "Gerenciador de Estoque",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Gerenciador%20de%20Estoque.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Gerenciador%20de%20Estoque.JPG",
             "project_url": "https://stock-items-react.vercel.app/",
             "description": "Simulação de uma interface gerenciadora do estoque de uma loja, idealizado como uma Single Page Application. Permite que você gerencie seu inventário, adicione novos itens, exclua itens, atualize itens existentes e visualize várias estatísticas. Clique em 'Novo item' e experimente com o projeto.",
             "tags": [ "React.js", "React Router", "Vite", "Node.js", "HTML", "CSS" ]
         },
         {
             "title": "Programa de Gestão de Finanças Pessoais",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Finan%C3%A7as%20Pessoais.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Finan%C3%A7as%20Pessoais.JPG",
             "project_url": "https://pojeto-financas-pessoais-consumindo-uma-api-java-script.vercel.app/",
             "description": "Programa de Gestão de Finanças Pessoais - Projeto Avançado de uma interface de controle de finanças pessoais, consumindo uma API (Interface de Programação de Aplicativos).",
             "tags": [ "JavaScript", "JSON Server", "Node.js", "HTML", "CSS" ]
         },
         {
             "title": "Site Viagem ao Espaço",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Viagem%20ao%20Espa%C3%A7o.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Viagem%20ao%20Espa%C3%A7o.JPG",
             "project_url": "https://one-bit-x-bootstrap.vercel.app/index.html",
             "description": "Com o tema de viagem ao espaço, possui imagens de foguetes da SpaceX, carrossel de imagens, animações e formatação própria. Clique na barra de navegação no topo da página para navegar entre as rotas do projeto. ",
             "tags": [ "Bootstrap", "Sass", "HTML", "CSS" ]
         },
         {
             "title": "Landing Page",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Landing%20Page.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Landing%20Page.JPG",
             "project_url": "https://landing-page-onebit-x-bootstrap.vercel.app/",
             "description": "Um formulário fictício de uma pessoa que viajará para Marte",
             "tags": [ "Bootstrap", "Sass", "HTML", "CSS" ]
         },
         {
             "title": "Gerador de Senhas",
-            "imageUrl": "https://github.com/LeoRam84/portfolio-leo/blob/main/data/imagens/projetos%20imgs/Gerador%20de%20Senhas.JPG",
+            "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Gerador%20de%20Senhas.JPG",
             "project_url": "https://password-gen-react-kappa.vercel.app/",
             "description": "Projeto utilizando componentes React, hooks (useState) e props.", 
             "tags": [ "React.js", "Nodejs", "CSS" ]

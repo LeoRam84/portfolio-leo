@@ -5,13 +5,13 @@ import Link from "next/link"
 import skills from "../../data/skills.json"
 import usersInfo from "../../data/usersInfo.json"
 
-
+/*flex-wrap-reverse, depois de flex-row, na segunda linha abaixo*/
 
 export default function Intro() {
 
     return (
-        <div className={`w-full h-auto p-0 relative top-[50px] mb-[100px]`}>
-            <div className={`w-full flex items-start justify-between flex-row flex-wrap-reverse`}>
+        <div className={`w-full h-auto p-0 relative top-[20px] mb-[100px]`}>
+            <div className={`w-full flex items-start justify-between flex-row`}> 
                 <div className={`w-full h-auto p-[10px] relative container md:w-[50%]`}>
                     {/* boxes */}
                     <IntroCards data={skills.skill} />
@@ -55,7 +55,7 @@ function IntroCards({ data }) {
                 data.length > 0 ?
                     data.map((skill, i) => {
                         return (
-                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[120px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl `}>
+                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[300px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl flex items-center justify-center`}>
                                 <div className={`flex flex-col items-start justify-start`}>
                                     <p className={`m-0 font-extrabold text-green-100 `}>
                                         {skill.name}
@@ -70,7 +70,7 @@ function IntroCards({ data }) {
                                     </a>
                                 </div> */}
                                 <div>
-                                    <img src={skill.imageUrl} alt="Certificado" />
+                                    <img src={skill.imageUrl} className={`w-[relative] h-[relative] m-[5px] p-[80px] object-cover`} alt="Certificado" />
                                 </div>
                                 <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
                             </div>
@@ -83,12 +83,12 @@ function IntroCards({ data }) {
                                 Desenvolvedor Front-End
                             </p>
                             <span className={`text-[12px] text-white-300 pt-[10px]  `}>
-                                Development of beautiful and unique user interfaces.
+                                Desenvolvimento de interfaces bonitas e únicas.
                             </span>
                         </div>
                         <div className={`absolute bottom-[10px]`}>
                             <a className={` text-[14px] text-white-200 font-bold underline `}>
-                                60 Projects
+                                60 Projetos
                             </a>
                         </div>
                         <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
