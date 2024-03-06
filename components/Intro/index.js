@@ -70,7 +70,7 @@ function IntroCards({ data }) {
                                     </a>
                                 </div> */}
                                 <div>
-                                    <img src={skill.imageUrl} alt="React" />
+                                    <img src={skill.imageUrl} alt="Certificado" />
                                 </div>
                                 <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
                             </div>
