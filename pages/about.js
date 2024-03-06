@@ -24,7 +24,7 @@ function About() {
 
     return (
         <div>
-            <DomHead pageName='About' />
+            <DomHead pageName='Sobre' />
             <Container>
                 <NavBar />
             </Container>
@@ -35,10 +35,10 @@ function About() {
                     </Link>
                     <br />
                     <h1 className="text-[50px] font-bold ">
-                        About
+                        Quem sou eu ?
                     </h1>
                     <p className="text-[15px] text-white-300 ">
-                        About Me.
+                        Sobre mim.
                     </p>
                 </Container>
             </div>
@@ -53,10 +53,10 @@ function About() {
                         </div>
                         <div className="w-full md:w-[50%] ">
                             <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
-                                <p className={`text-[12px] text-white-200 `}>Introduce</p>
+                                <p className={`text-[12px] text-white-200 `}>Introdução</p>
                                 <div className={`relative top-[20px]`}>
-                                    <h1 className={`text-[35px] font-bold mb-[20px]`}>
-                                        {userInfo.greeting_type}  I'm {userInfo.full_name}
+                                    <h1 className={`text-[34px] font-bold mb-[20px]`}>
+                                        {userInfo.greeting_type}  Sou {userInfo.full_name}
                                     </h1>
                                     <br />
                                     <br />

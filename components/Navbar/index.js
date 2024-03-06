@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import Link from "next/link"
-import { FaGithub, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { FiMail } from "react-icons/fi"
 import usersInfo from "../../data/usersInfo.json"
 import { socials } from "../../data/socials.json"
@@ -18,25 +18,25 @@ function NavBar() {
 
                     <ul className={`relative ml-[10px] hidden md:flex`}>
                         <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
-                            <Link href="/">Home</Link>
+                            <Link href="/">Início</Link>
                         </li>
                         <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
-                            <Link href="/about">About</Link>
+                            <Link href="/about">Quem sou eu ?</Link>
                         </li>
                         <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
-                            <Link href="/projects">Projects</Link>
+                            <Link href="/projects">Projetos</Link>
                         </li>
                         <li className={`mt-[5px] mr-[10px] mb-[0px] ml-[10px] transition-all hover:text-green-100 hover:font-extrabold cursor-pointer text-[12px]`}>
-                            <Link href="#contact">Contact</Link>
+                            <Link href="#contact">Contato</Link>
                         </li>
                     </ul>
                 </div>
                 <div className={`relative right w-[50vmin] hidden md:flex `}>
                     <ul className={`flex flex-row align-center justify-between items-center`}>
-                        {socials["twitter"] !== "" &&
-                            <a href={socials["twitter"]} target="_blank" className={`w-[100px] text-[17px] flex flex-row align-center justify-center items-center decoration-none  hover:text-white `}>
-                                <FaTwitter className={`mr-[10px] `} />
-                                <small>Twitter</small>
+                        {socials["linkedin"] !== "" &&
+                            <a href={socials["linkedin"]} target="_blank" className={`w-[100px] text-[17px] flex flex-row align-center justify-center items-center decoration-none  hover:text-white `}>
+                                <FaLinkedin className={`mr-[10px] `} />
+                                <small>Linkedin</small>
                             </a>}
 
                         {socials["github"] !== "" &&
@@ -89,27 +89,27 @@ export function ResponsiveNavbar({ activePage, pageName = "" }) {
                     <Link href="/">
                         <ion-icon name="home-outline" class={`icon`}></ion-icon>
                     </Link>
-                    <label className={`label`}>Home</label>
+                    <label className={`label`}>Início</label>
                 </li>
                 <li className={active === "projects" ? `active` : `li`} data-name="projects" onClick={handleActive}>
                     <Link href="/projects">
                         <ion-icon name="cube-outline" class={`icon`}></ion-icon>
                     </Link>
                     <label className={`label`}>
-                        Projects
+                        Projetos
                     </label>
                 </li>
                 <li className={active === "about" ? `active` : `li`} data-name="about" onClick={handleActive}>
                     <Link href="/about">
                         <ion-icon name="person-outline" class={`icon`}></ion-icon>
                     </Link>
-                    <label className={`label`}>About</label>
+                    <label className={`label`}>Quem sou eu ?</label>
                 </li>
                 <li className={active === "contact" ? `active mr-5` : `li mr-5`} data-name="contact" onClick={handleActive}>
                     <Link href={pageName === "" ? "#contact" : "/#contact"}>
                         <ion-icon name="mail-outline" class={`icon`}></ion-icon>
                     </Link>
-                    <label className={`label`}>Contact</label>
+                    <label className={`label`}>Contato</label>
                 </li>
             </div>
         </div>

@@ -1,53 +1,53 @@
 {
     "projects":[
         {
-            "title": "BaayMax",
-            "imageUrl": "https://github.com/Benrobo/baaymax-cli/raw/master/readmeImg/cli.png?raw=true",
-            "project_url": "https://github.com/Benrobo/baaymax",
-            "description": "Generate developer portfolio site from your github profile.",
-            "tags": [ "react", "nodejs" ]
+            "title": "Loja Virtual",
+            "imageUrl": "https://black-nextjs-delta.vercel.app/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F4982%2Fas-images.apple.com%2Fis%2Fmac-card-40-imac-24-202108%3Fwid%3D600%26hei%3D500%26fmt%3Djpeg%26qlt%3D95%26.v%3D1625868688000&w=1200&q=75",
+            "project_url": "https://black-nextjs-delta.vercel.app/",
+            "description": "Esse projeto simula uma loja virtual de artigos eletrônicos como tablets, computadores, celulares e relógios inteligentes. Tente adicionar e remover itens do carrinho. Foi criado com o Next.js e teve seu deploy feito no site da Vercel",
+            "tags": [ "JavaScript", "TypeScript", "React.js" ]
         },
         {
-            "title": "Babcock Ride",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/babcock-uber/main/readmeImg/babcock-profile.png",
-            "project_url": "https://github.com/Benrobo/babcock-uber",
-            "description": "Get a ride quickly as possible using this app meant for the babcock university.",
-            "tags": [ "react", "postgresql", "nodejs" ]
+            "title": "Gerenciador de Estoque",
+            "imageUrl": "",
+            "project_url": "https://stock-items-react.vercel.app/",
+            "description": "Simulação de uma interface gerenciadora do estoque de uma loja, idealizado como uma Single Page Application. Permite que você gerencie seu inventário, adicione novos itens, exclua itens, atualize itens existentes e visualize várias estatísticas. Clique em 'Novo item' e experimente com o projeto.",
+            "tags": [ "React.js", "React Router", "Vite", "Node.js", "HTML", "CSS" ]
         },
         {
-            "title": "E-Workflow",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/e-workflow-client/main/readmeImg/dashboard.png",
-            "project_url": "https://github.com/Benrobo/e-workflow-client",
-            "description": "Automate document submission within a school.",
-            "tags": [ "react", "postgresql", "nodejs" ]
+            "title": "Programa de Gestão de Finanças Pessoais",
+            "imageUrl": "",
+            "project_url": "https://pojeto-financas-pessoais-consumindo-uma-api-java-script.vercel.app/",
+            "description": "Programa de Gestão de Finanças Pessoais - Projeto Avançado de uma interface de controle de finanças pessoais, consumindo uma API (Interface de Programação de Aplicativos).",
+            "tags": [ "JavaScript", "JSON Server", "Node.js", "HTML", "CSS" ]
         },
         {
-            "title": "Quickr",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/quickr/main/readmeImg/quickr1.png",
-            "project_url": "https://github.com/Benrobo/quickr",
-            "description": "Generate unique resume / CV.",
-            "tags": [ "react", "nodejs" ]
+            "title": "Site Viagem ao Espaço",
+            "imageUrl": "https://one-bit-x-bootstrap.vercel.app/images/home/01.jpg",
+            "project_url": "https://one-bit-x-bootstrap.vercel.app/index.html",
+            "description": "Com o tema de viagem ao espaço, possui imagens de foguetes da SpaceX, carrossel de imagens, animações e formatação própria. Clique na barra de navegação no topo da página para navegar entre as rotas do projeto. ",
+            "tags": [ "Bootstrap", "Sass", "HTML", "CSS" ]
         },
         {
-            "title": "PayRill",
-            "imageUrl": "https://camo.githubusercontent.com/b9b0a0e9957c3fe08d47cbacbd36dd87242837f5ce88f00ed9db4cd3da8fd3d9/68747470733a2f2f643131327936393861646975327a2e636c6f756466726f6e742e6e65742f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3232312f3931352f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/payrill",
-            "description": "Ease Checkout Processes and Reduce queues in shopping stores application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
+            "title": "Landing Page",
+            "imageUrl": "https://landing-page-onebit-x-bootstrap.vercel.app/imagens/backgroundLp.png",
+            "project_url": "https://landing-page-onebit-x-bootstrap.vercel.app/",
+            "description": "Um formulário fictício de uma pessoa que viajará para Marte",
+            "tags": [ "Bootstrap", "Sass", "HTML", "CSS" ]
         },
         {
-            "title": "RayPal",
-            "imageUrl": "https://camo.githubusercontent.com/db234641b926872b7e4cd67a3daae83c4e937295922e4176feacf83b0d1975b8/68747470733a2f2f6368616c6c656e6765706f73742d73332d6368616c6c656e6765706f73742e6e6574646e612d73736c2e636f6d2f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3033362f3130312f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/Rapyd-Payment-app",
-            "description": "Payment Infrastructure application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
+            "title": "Gerador de Senhas",
+            "imageUrl": "",
+            "project_url": "https://password-gen-react-kappa.vercel.app/",
+            "description": "Projeto utilizando componentes React, hooks (useState) e props.", 
+            "tags": [ "React.js", "Nodejs", "CSS" ]
         },
          {
-            "title": "Tymonial",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/tymonial-app/main/github-img/formUI.png",
-            "project_url": "https://github.com/Benrobo/tymonial-app",
-            "description": "An easy way to collect users feedback into yout web app.",
-            "tags": [ "react", "nodejs", "linode server" ]
+            "title": "",
+            "imageUrl": "",
+            "project_url": "",
+            "description": "",
+            "tags": [ "", "", "" ]
         }
     ]
 }

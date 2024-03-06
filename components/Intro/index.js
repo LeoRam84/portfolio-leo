@@ -17,10 +17,10 @@ export default function Intro() {
                     <IntroCards data={skills.skill} />
                 </div>
                 <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:w-[45%]`}>
-                    <p className={`text-[12px] text-white-200 `}>Introduce</p>
+                    <p className={`text-[12px] text-white-200 `}>Introdução</p>
                     <div className={`relative top-[20px]`}>
                         <h1 data-aos="zoom-in-up" className={`text-[35px] font-bold mb-[20px]`}>
-                            {usersInfo.greeting_type}  I'm {usersInfo.full_name}.
+                            {usersInfo.greeting_type}  Eu sou {usersInfo.full_name}.
                         </h1>
                         <br />
                         <br />
@@ -33,7 +33,7 @@ export default function Intro() {
                         </p>
 
                         <Link href="/about">
-                            <a data-aos="zoom-in-up" className={`text-[14px] font-bold text-green-200 underline`}>Read More</a>
+                            <a data-aos="zoom-in-up" className={`text-[14px] font-bold text-green-200 underline`}>Leia Mais</a>
                         </Link>
                     </div>
                 </div>
@@ -60,14 +60,17 @@ function IntroCards({ data }) {
                                     <p className={`m-0 font-extrabold text-green-100 `}>
                                         {skill.name}
                                     </p>
-                                    <span className={`text-[12px] text-white-300 pt-[10px]  `}>
+                                    {/* <span className={`text-[12px] text-white-300 pt-[10px]  `}>
                                         {skill.description}
-                                    </span>
+                                    </span> */}
                                 </div>
-                                <div className={`absolute bottom-[10px]`}>
+                                {/* <div className={`absolute bottom-[10px]`}>
                                     <a className={` text-[14px] text-white-200 font-bold underline `}>
-                                        {skill.projects_completed} Projects
+                                        {skill.projects_completed} 
                                     </a>
+                                </div> */}
+                                <div>
+                                    <img src={skill.imageUrl} alt="React" />
                                 </div>
                                 <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
                             </div>
@@ -77,7 +80,7 @@ function IntroCards({ data }) {
                     <div data-aos="zoom-in-up" className={`w-full h-[120px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl `}>
                         <div className={`flex flex-col items-start justify-start`}>
                             <p className={`m-0 font-extrabold text-green-100 `}>
-                                Frontend Development
+                                Desenvolvedor Front-End
                             </p>
                             <span className={`text-[12px] text-white-300 pt-[10px]  `}>
                                 Development of beautiful and unique user interfaces.

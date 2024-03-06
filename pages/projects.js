@@ -23,7 +23,7 @@ function Projects() {
 
     return (
         <div>
-            <DomHead pageName='Projects' />
+            <DomHead pageName='Projetos' />
             <Container>
                 <NavBar />
             </Container>
@@ -34,10 +34,10 @@ function Projects() {
                     </Link>
                     <br />
                     <h1 className="text-[50px] font-bold ">
-                        Projects
+                        Projetos
                     </h1>
                     <p className="text-[15px] text-white-300 ">
-                        Here are my completed projects.
+                        Aqui estão meus projetos completos.
                     </p>
                 </Container>
             </div>
@@ -45,14 +45,14 @@ function Projects() {
                 <br />
                 <Container>
                     <div id="head" className="w-full py-2 mx-auto flex flex-row justify-start items-start ">
-                        <h2 className="text-[20px] text-white-200 px-4 md:px-4 ">Personal Projects</h2>
+                        <h2 className="text-[20px] text-white-200 px-4 md:px-4 ">Projetos pessoais</h2>
                     </div>
                     <div className="w-full mt-2 mx-auto h-auto p-3  flex flex-col items-start justify-start flex-wrap mb-5 space-x-0 md:space-x-5 md:w-[100%] md:flex-row">
                         {/* <Categories /> */}
                         <ProjectsCard />
                     </div>
                     <div id="head" className="w-full py-5 mx-auto flex flex-row justify-start items-start ">
-                        <h2 className=" text-[20px] text-white-200 p-4 md:p-0 ">Github Repos</h2>
+                        <h2 className=" text-[20px] text-white-200 ml-4 p-4 md:p-0 ">Repositórios no GitHub </h2>
                     </div>
                     <div id="head" className="w-full space-x-0 py-4 p-4 mx-auto flex flex-row justify-start items-start flex-wrap mb-[50px] gap-10 md:flex-row md:space-x-0 ">
                         <GithubRepo />
@@ -113,7 +113,7 @@ function ProjectsCard() {
                                             list.project_url !== "" ?
                                                 <>
                                                     <a href={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
-                                                        View
+                                                        Ver
                                                     </a>
                                                     <ion-icon name="arrow-forward-outline" className={`ml-[10px] p-[10px]`}></ion-icon>
                                                 </>
@@ -181,11 +181,11 @@ function GithubRepo() {
                 loading ? "Loading..." : error !== null ? <p>{error}</p> : repos.length > 0 ?
                     repos.map((rep, i) => {
                         return (
-                            <div key={i} className="relative w-full h-[180px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px]">
-                                <h2 className="w-full text-[20px] ">{rep.name}</h2>
-                                <p className=" w-full text-[15px] text-white-300 ">{rep.description && rep.description.length > 50 ? rep.description.slice(0, 80) + "..." : rep.description}</p>
+                            <div key={i} className="relative w-full h-[250px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px]">
+                                <h2 className="w-full text-[20px] pt-5 break-all">{rep.name}</h2>
+                                <p className=" w-full text-[15px] pt-2  text-white-300 ">{rep.description && rep.description.length > 50 ? rep.description.slice(0, 80) + "..." : rep.description}</p>
                                 <br />
-                                <div className="ratings absolute bottom-4 w-full flex flex-row items-start justify-start">
+                                <div className="ratings absolute bottom-4 pt-4 w-full flex flex-row items-start justify-start">
                                     <span className="mr-2 flex flex-row items-start justify-start">
                                         <StarRatings title="star" count={rep.stargazers_count} />
                                     </span>
@@ -195,7 +195,7 @@ function GithubRepo() {
                                 </div>
 
                                 <a href={rep.html_url} target={"_blank"} className="absolute right-3 top-2 flex flex-row items-center">
-                                    <small className="underline">View</small>
+                                    <small className="underline">Ver</small>
                                     <FaArrowRight className="ml-2 text-[12px] " />
                                 </a>
                             </div>

@@ -54,12 +54,12 @@ function Projects() {
         <div className={`projectCont w-full h-auto relative top-[50px] p-10px flex flex-col items-center justify-center mb-[50px]`}>
             <div className={`w-full flex flex-row items-center justify-center`}>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
-                <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>Latest Works</p>
+                <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>Últimos Trabalhos</p>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
 
 
                 <Link href="/projects">
-                    <a data-aos="zoom-in-up" className={`text-center text-green-200 underline absolute top-[50px] text-[14px]`}>All Projects</a>
+                    <a data-aos="zoom-in-up" className={`text-center text-green-200 underline absolute top-[50px] text-[14px]`}>Todos os Projetos</a>
                 </Link>
             </div>
 
@@ -83,7 +83,7 @@ function Projects() {
                                 }
                             `}</style>
                                     <div className={`w-full p-[10px] bottom-[5px]`}>
-                                        <div className="w-full h-auto">
+                                        <div className="w-full h-[250px]">
                                             <p className={`text-[15px] text-white-200`}>{list.title === "" ? "Project Title" : list.title}</p>
                                             <br />
                                             <small>{list.description === "" ? "some dummy description" : list.description}</small>
@@ -94,7 +94,7 @@ function Projects() {
                                                 list.tags.length > 0 ?
                                                     list.tags.slice(0, 3).map((tag, i) => {
                                                         return (
-                                                            <span key={i} className={`text-[10px] py-[3px] px-[9px] bg-dark-100 mr-[2px] rounded-[2px] text-white-100`}>{tag}</span>
+                                                            <span key={i} className={`text-[10px] py-[3px] px-[9px] mb-[30px] bg-dark-100 mr-[2px] rounded-[2px] text-white-100`}>{tag}</span>
                                                         )
                                                     })
                                                     :
@@ -106,7 +106,7 @@ function Projects() {
                                                 list.project_url !== "" ?
                                                     <>
                                                         <a href={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
-                                                            View
+                                                            Ver
                                                         </a>
                                                         <ion-icon name="arrow-forward-outline" className={`ml-[10px] p-[10px]`}></ion-icon>
                                                     </>
@@ -140,8 +140,8 @@ function GithubRepo({ repos }) {
                 repos.length > 0 ?
                     repos.slice(0, 3).map((rep, i) => {
                         return (
-                            <div data-aos="zoom-in" key={i} className="relative w-full h-[180px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px] ">
-                                <h2 className="w-full text-[20px] ">{rep.name}</h2>
+                            <div data-aos="zoom-in" key={i} className="relative w-full h-[250px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px] ">
+                                <h2 className="w-full pt-[40px] text-[20px] break-all">{rep.name}</h2>
                                 <br />
                                 <p className=" w-full text-[15px] text-white-300 ">{rep.description && rep.description.length > 50 ? rep.description.slice(0, 60) + "...." : rep.description}</p>
                                 <br />
@@ -155,7 +155,7 @@ function GithubRepo({ repos }) {
                                 </div>
 
                                 <a href={rep.html_url} target={"_blank"} className="absolute right-3 top-2 flex flex-row items-center">
-                                    <small className="underline">View</small>
+                                    <small className="underline">Ver</small>
                                     <FaArrowRight className="ml-2 text-[12px] " />
                                 </a>
                             </div>

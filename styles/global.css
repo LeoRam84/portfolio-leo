@@ -228,16 +228,16 @@ body{
     /* border: 2px solid var(--grnbg2); */
     padding: 20px;
     position: absolute;
-    top: 10px;
-    border-radius: 50%;
+    top: 2px;
+    border-radius: 100%;
 }
 
-.header .circleA .langImgA{
-    width: 10vmin;
-    padding: 12px;
+.header .circleA .langImgA{ /* JS */
+    width: 9vmin;
+    padding: 6px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
     background: var(--bg2);
     border-radius: 50%;
     box-shadow: 0px 0px 15px var(--bg1);
@@ -260,9 +260,9 @@ body{
 }   
 
 
-.header .circleB .langImgB{
-    width: 20vmin;
-    padding: 15px;
+.header .circleB .langImgB{  /* REACT */
+    width: 14vmin;
+    padding: 6px;
     position: absolute;
     right: 20px;
     bottom: -50px;
@@ -288,9 +288,9 @@ body{
     border-radius: 50%;
 }
 
-.header .circleC .langImgC{
-    width: 15vmin;
-    padding: 15px;
+.header .circleC .langImgC{  /* TS */
+    width: 12vmin;
+    padding: 6px;
     position: absolute;
     left: -50px;
     top: 100px;

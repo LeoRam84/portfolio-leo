@@ -18,12 +18,12 @@ function Contact() {
             <Container>
                 <div className="w-full h-auto flex flex-col items-start justify-start py-[50px] mb-[20px] md:py-5 ">
                     <h1 data-aos="fade-right" className="text-[30px] font-thin ">
-                        Let Make The Impossible <span className="text-green-200 font-extrabold">Possible.</span>
+                        Vamos fazer o impossível <span className="text-green-200 font-extrabold">Possível.</span>
                     </h1>
                     <br />
                     <a id='contact'></a>
                     <p data-aos="fade-right" className=" text-[20px] ">
-                        Start by <span className=" text-green-200 underline cursor-pointer " onClick={openContactForm}>saying hi</span>
+                        Comece <span className=" text-green-200 underline cursor-pointer " onClick={openContactForm}>por aqui</span>
                     </p>
                 </div>
             </Container>
@@ -111,7 +111,7 @@ function ContactForm({ contactActive, closeContactForm }) {
                 return console.log(response);
             }, (err) => {
                 setLoading(false)
-                notif.error(`Something went wrong, could not send message.`)
+                notif.error(`Algo deu errado, não foi possível enviar sua mensagem.`)
                 console.error(err)
             });
 
@@ -122,18 +122,18 @@ function ContactForm({ contactActive, closeContactForm }) {
             <div className={`w-[380px] ${contactActive ? "h-[100vh]" : "h-0 overflow-hidden"} max-h-[450px] bg-dark-300 shadow-xl z-[999] fixed bottom-[90px] right-1 px-3 rounded-md transition-all md:right-5 md:bottom-[20px] md:w-[350px]`} id="form">
                 <div id="head" className='w-full flex flex-row items-start justify-start'>
                     <h1 className="text-[20px] py-4 ">
-                        Contact Me
+                        Contato
                     </h1>
                     <AiOutlineClose className={`p-2 text-[35px] absolute top-[-16px] right-[-5px] text-red-200 bg-red-900 rounded-[50%] cursor-pointer ${contactActive ? "flex" : "hidden"} `} onClick={closeContactForm} />
                 </div>
                 <div id="inputs" className="w-full flex flex-col items-start justify-start">
-                    <input type="text" name="name" className="w-full px-2 py-[12px] mb-4 rounded-md bg-dark-100 border-[2px] border-none outline-none " placeholder='Full Name' value={userInput.name} onChange={handleInput} />
+                    <input type="text" name="name" className="w-full px-2 py-[12px] mb-4 rounded-md bg-dark-100 border-[2px] border-none outline-none " placeholder='Nome Completo' value={userInput.name} onChange={handleInput} />
 
-                    <input type="mail" name="email" className="w-full px-2 py-[12px] mb-4 rounded-md bg-dark-100 border-[2px] border-none outline-none " placeholder='johndoe@mail.com' value={userInput.email} onChange={handleInput} />
+                    <input type="mail" name="email" className="w-full px-2 py-[12px] mb-4 rounded-md bg-dark-100 border-[2px] border-none outline-none " placeholder='jonas@mail.com' value={userInput.email} onChange={handleInput} />
 
-                    <textarea cols="30" rows="5" name="message" className="w-full h-full bg-dark-100 resize-none rounded-md outline-none px-2 py-2 mb-3" placeholder='Message' onChange={handleInput} value={userInput.message}></textarea>
+                    <textarea cols="30" rows="5" name="message" className="w-full h-full bg-dark-100 resize-none rounded-md outline-none px-2 py-2 mb-3" placeholder='Mensagem' onChange={handleInput} value={userInput.message}></textarea>
                     <button className="w-full px-2 py-3 text-center transition-all bg-dark-200 rounded-md hover:bg-dark-400" onClick={sendMessage}>
-                        {loading ? <span className="text-green-200">Sending Message..</span> : "Send Message"}
+                        {loading ? <span className="text-green-200">Enviando mensagem..</span> : "Send Message"}
                     </button>
                 </div>
             </div>

@@ -9,13 +9,14 @@ function Quote() {
     return (
         <div className="w-full h-auto bg-dark-200 py-[50px]">
             <Container>
-                <div className="head mx-auto flex flex-col items-center justify-center text-center md:items-center md:justify-start md:flex-row md:px-0">
-                    <h1 data-aos="fade-right" className="text-[35px] font-bold md:mr-[50px]">Favorite Quote</h1>
-                    <p data-aos="fade-left" className="text-[12px] text-white-200 ">My favorite motivational quote.</p>
+                <div className="head mx-auto flex flex-col items-center justify-center text-center ml-4 md:items-center md:justify-start md:flex-row md:px-0">
+                    <h1 data-aos="fade-right" className="text-[35px] font-bold md:mr-[50px]">Frases Motivacionais</h1>
+                    <p data-aos="fade-left" className="text-[14px] mt-[7px] text-white-200 ">Minhas frases motivacionais favoritas:</p>
                 </div>
                 <div id="quote-cont" className='w-full h-auto mt-[100px] relative p-2 md:p-0'>
 
                     <QuoteCard />
+                    <QuoteCard2 />
                 </div>
             </Container>
         </div>
@@ -27,7 +28,7 @@ export default Quote
 function QuoteCard() {
 
     return (
-        <div id="t-box" className='relative w-full h-auto space-2 bg-dark-300 px-[30px] py-[20px] md:px-[80px] md:py-[50px] rounded-lg overflow-hidden'>
+        <div id="t-box" className='relative w-full h-auto space-2 bg-dark-300 m-[15px] px-[30px] py-[20px] md:px-[80px] md:py-[50px] rounded-lg overflow-hidden'>
             <FaQuoteRight data-aos="fade-left" className='absolute top-[20px] right-[25px] text-[35px] text-white-300 opacity-[.3]' />
             <div id="ratings" className="w-full flex flex-row items-center justify-start">
                 <StarRatings count={10} size={10} />
@@ -37,6 +38,25 @@ function QuoteCard() {
             <div id="body" className="w-full flex flex-row items-start justify-start mt-4">
                 <p data-aos="zoom-in-up">
                     {userInfo.favorites_quote}
+                </p>
+            </div>
+        </div>
+    )
+}
+
+function QuoteCard2() {
+
+    return (
+        <div id="t-box" className='relative w-full h-auto space-2 bg-dark-300 m-[15px] px-[30px] py-[20px] md:px-[80px] md:py-[50px] rounded-lg overflow-hidden'>
+            <FaQuoteRight data-aos="fade-left" className='absolute top-[20px] right-[25px] text-[35px] text-white-300 opacity-[.3]' />
+            <div id="ratings" className="w-full flex flex-row items-center justify-start">
+                <StarRatings count={10} size={10} />
+                <small className='ml-2 text-white-300 font-bold'>{userInfo.github_username.charAt(0).toUpperCase() + userInfo.github_username.slice(1)}</small>
+            </div>
+            <br />
+            <div id="body" className="w-full flex flex-row items-start justify-start mt-4">
+                <p data-aos="zoom-in-up">
+                    {userInfo.favorites_quote2}
                 </p>
             </div>
         </div>
