@@ -8,10 +8,10 @@
             "tags": [ "JavaScript", "TypeScript", "React.js" ]
         },
         {
-            "title": "Gerenciador de Estoque",
+            "title": "Holiday Management",
             "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Gerenciador%20de%20Estoque.JPG",
-            "project_url": "https://stock-items-react.vercel.app/",
-            "description": "Simulação de uma interface gerenciadora do estoque de uma loja, idealizado como uma Single Page Application. Permite que você gerencie seu inventário, adicione novos itens, exclua itens, atualize itens existentes e visualize várias estatísticas. Clique em 'Novo item' e experimente com o projeto.",
+            "project_url": "https://holiday-management.vercel.app/",
+            "description": "Interface gerenciadora de planos para feriado, idealizado como uma Single Page Application, seguindo a ideia do CRUD. Permite que você gerencie sua agenda e visualize várias estatísticas. Clique em 'Holiday Plans' depois em 'Add New Holiday Plan' e experimente.",
             "tags": [ "React.js", "React Router", "Vite", "Node.js", "HTML", "CSS" ]
         },
         {
