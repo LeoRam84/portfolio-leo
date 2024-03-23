@@ -68,7 +68,8 @@ function Projects() {
                     projects.length > 0 ?
                         projects.slice(0, 6).map((list, i) => {
                             return (
-                                <div data-aos="zoom-in" key={i} className={`box w-full h-auto bg-dark-200 rounded-[5px] relative top-[50px] transition-all mb-[50px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} key={list}>
+                                // Retirei key={list}
+                                <div data-aos="zoom-in" key={i} className={`box w-full h-auto bg-dark-200 rounded-[5px] relative top-[50px] transition-all mb-[50px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`}>  
                                     <div className="imgCont"></div>
                                     <style jsx>{`
                                 .imgCont{

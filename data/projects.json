@@ -41,13 +41,6 @@
             "project_url": "https://password-gen-react-kappa.vercel.app/",
             "description": "Projeto utilizando componentes React, hooks (useState) e props.", 
             "tags": [ "React.js", "Nodejs", "CSS" ]
-        },
-         {
-            "title": "",
-            "imageUrl": "",
-            "project_url": "",
-            "description": "",
-            "tags": [ "", "", "" ]
         }
     ]
 }
