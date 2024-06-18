@@ -76,7 +76,7 @@ function Projects() {
                                     width: 100%;
                                     height: 190px;
                                     background-image: url(${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl});
-                                    background-size: cover;
+                                    background-size: contain;
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     // box-shadow: 0px 0px 3px #000;
@@ -95,7 +95,7 @@ function Projects() {
                                                 list.tags.length > 0 ?
                                                     list.tags.slice(0, 3).map((tag, i) => {
                                                         return (
-                                                            <span key={i} className={`text-[10px] py-[3px] px-[9px] mb-[30px] bg-dark-100 mr-[2px] rounded-[2px] text-white-100`}>{tag}</span>
+                                                            <span key={i} className={`text-[10px] py-[3px] px-[9px] mb-[30px] bg-dark-100 mr-[5px] rounded-[2px] text-white-100`}>{tag}</span>
                                                         )
                                                     })
                                                     :
@@ -106,7 +106,7 @@ function Projects() {
                                             {
                                                 list.project_url !== "" ?
                                                     <>
-                                                        <a href={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
+                                                        <a href={list.project_url} target="blank" className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
                                                             Ver
                                                         </a>
                                                         <ion-icon name="arrow-forward-outline" className={`ml-[10px] p-[10px]`}></ion-icon>

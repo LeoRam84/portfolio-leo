@@ -55,9 +55,9 @@ function IntroCards({ data }) {
                 data.length > 0 ?
                     data.map((skill, i) => {
                         return (
-                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[300px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl flex items-center justify-center`}>
+                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[300px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] md:min-w-[20rem] lg:min-w-[27rem] relative transition-all mt-4 hover:shadow-2xl flex items-center justify-center`}>
                                 <div className={`flex flex-col items-start justify-start`}>
-                                    <p className={`m-0 font-extrabold text-green-100 `}>
+                                    <p className={`m-0 font-extrabold text-green-100 hidden lg:block`}>
                                         {skill.name}
                                     </p>
                                     {/* <span className={`text-[12px] text-white-300 pt-[10px]  `}>
@@ -70,7 +70,7 @@ function IntroCards({ data }) {
                                     </a>
                                 </div> */}
                                 <div>
-                                    <img src={skill.imageUrl} className={`w-[relative] h-[relative] m-[5px] p-[80px] object-cover`} alt="Certificado" />
+                                    <img src={skill.imageUrl} className={`object-cover object-center w-full h-auto max-w-[25rem] p-5 min-w-[20rem] 2xl:ml-10`} alt="Certificado" />
                                 </div>
                                 <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
                             </div>

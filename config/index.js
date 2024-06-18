@@ -1,9 +1,10 @@
+// require('dotenv').config();
 
 
 // EMAILJS Config Data
 
-export const EMAILJS_TEMPLATE_ID = "template_kh9buql"
+export const EMAILJS_TEMPLATE_ID = "template_8dxdf44"
 
-export const EMAILJS_SERVICE_ID = "service_hd5qbz2"
+export const EMAILJS_SERVICE_ID = "service_2rzj7ex"
 
-export const EMAILJS_PUBLIC_KEY = "user_SXwbm2bfwtluGBhARcTaf"
+export const EMAILJS_PUBLIC_KEY = "AA-uBsFb0T_THg-6P"

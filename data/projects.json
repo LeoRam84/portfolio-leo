@@ -5,7 +5,7 @@
             "imageUrl": "https://raw.githubusercontent.com/LeoRam84/portfolio-leo/main/data/imagens/projetos%20imgs/Loja%20Virtual.JPG",
             "project_url": "https://black-nextjs-delta.vercel.app/",
             "description": "Esse projeto simula uma loja virtual de artigos eletrônicos como tablets, computadores, celulares e relógios inteligentes. Tente adicionar e remover itens do carrinho. Foi criado com o Next.js e teve seu deploy feito no site da Vercel",
-            "tags": [ "JavaScript", "TypeScript", "React.js" ]
+            "tags": [ "React.js", "JavaScript", "TypeScript" ]
         },
         {
             "title": "Holiday Management",

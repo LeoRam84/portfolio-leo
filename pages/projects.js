@@ -47,7 +47,7 @@ function Projects() {
                     <div id="head" className="w-full py-2 mx-auto flex flex-row justify-start items-start ">
                         <h2 className="text-[20px] text-white-200 px-4 md:px-4 ">Projetos pessoais</h2>
                     </div>
-                    <div className="w-full mt-2 mx-auto h-auto p-3  flex flex-col items-start justify-start flex-wrap mb-5 space-x-0 md:space-x-5 md:w-[100%] md:flex-row">
+                    <div className="w-full mt-2 mx-auto h-auto p-3 flex flex-col items-start justify-start flex-wrap mb-5 gap-0 md:gap-4 md:w-[100%] md:flex-row">
                         {/* <Categories /> */}
                         <ProjectsCard />
                     </div>
@@ -82,7 +82,7 @@ function ProjectsCard() {
                             width: 100%;
                             height: 190px;
                             background-image: url(${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl});
-                            background-size: cover;
+                            background-size: contain;
                             background-repeat: no-repeat;
                             background-position: center;
                             // box-shadow: 0px 0px 3px #000;
@@ -90,7 +90,7 @@ function ProjectsCard() {
                         }
                     `}</style>
                                 <div className={`w-full p-[10px] bottom-[5px]`}>
-                                    <div className="w-full h-auto">
+                                    <div className="w-full h-[250px]">
                                         <p className={`text-[15px] text-white-200`}>{list.title === "" ? "Project Title" : list.title}</p>
                                         <br />
                                         <small>{list.description === "" ? "some dummy description" : list.description.length > 150 ? list.description.slice(0, 100) + "..." : list.description}</small>
@@ -101,7 +101,7 @@ function ProjectsCard() {
                                             list.tags.length > 0 ?
                                                 list.tags.slice(0, 3).map((tag, i) => {
                                                     return (
-                                                        <span key={i} className={`text-[10px] py-[3px] px-[9px] bg-dark-100 mr-[2px] rounded-[2px] text-white-100`}>{tag}</span>
+                                                        <span key={i} className={`text-[10px] py-[3px] px-[9px] mb-[30px] bg-dark-100 mr-[5px] rounded-[2px] text-white-100`}>{tag}</span>
                                                     )
                                                 })
                                                 :
@@ -112,7 +112,7 @@ function ProjectsCard() {
                                         {
                                             list.project_url !== "" ?
                                                 <>
-                                                    <a href={list.project_url} className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
+                                                    <a href={list.project_url} target="blank" className={`text-white-200 mr-[10px] hover:underline hover:text-white-100`}>
                                                         Ver
                                                     </a>
                                                     <ion-icon name="arrow-forward-outline" className={`ml-[10px] p-[10px]`}></ion-icon>
