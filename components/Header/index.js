@@ -135,8 +135,8 @@ function ResumeViewer({ openResume }) {
 
     function dowloadCv() {
         let link = document.createElement("a")
-        link.href = resume;
-        link.download = "resume.pdf"
+        link.href = "/CV/resume.pdf";
+        link.download = "Currículo Leonardo C. Ramidan";
         link.click()
     }
 

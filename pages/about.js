@@ -45,13 +45,13 @@ function About() {
 
             <div className="w-screen h-auto ">
                 <Container>
-                    <div className="w-full  h-auto flex flex-col items-center justify-between p-5 md:flex-row">
-                        <div className="w-full md:w-[50%] ">
+                    <div className="w-full h-auto flex flex-col items-center justify-between p-5 md:flex-row">
+                        <div className="w-full md:w-[50rem] ">
                             <div className="w-full h-[450px] bg-cover bg-center bg-no-repeat md:w-[350px] rounded-md" style={{
                                 backgroundImage: `url(${avatar})`
                             }}></div>
                         </div>
-                        <div className="w-full md:w-[50%] ">
+                        <div className="w-full md:w-[50rem] ">
                             <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:top-0`}>
                                 <p className={`text-[12px] text-white-200 `}>Introdução</p>
                                 <div className={`relative top-[20px]`}>
