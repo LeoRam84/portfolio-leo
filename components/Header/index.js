@@ -13,6 +13,17 @@ export default function Header({ children }) {
 
     const userName = usersInfo.github_username;
 
+    const startDate = new Date("2023-01-01");
+    const currentDate = new Date();
+
+    const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 + (currentDate.getMonth() - startDate.getMonth());
+
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+
+    <h1 className={`text-[35px] pt-[10px] pr-[10px] pb-0 pl-0`}>
+        {years} anos e {months} meses
+    </h1>
     function openResume() {
 
         setResumeActive(!resumeActive)
@@ -82,21 +93,29 @@ export default function Header({ children }) {
                             <br />
                         </div>
                         <div className={`relative top-[50px] flex align-start items-start justify-start w-full`}>
-                            <div data-aos="zoom-in-left" className={`w-[50%] mr-[20px] flex flex-row items-center justify-start`}>
-                                <h1 className={` text-[35px] pt-[10px] pr-[10px] pb-0 pl-0 `}>
-                                    {(new Date().getFullYear() - parseInt(usersInfo.tech_year))+1}
+                            <div data-aos="zoom-in-left" className={`w-[50%] mr-[20px] flex flex-col items-start justify-start`}>
+                                <h1 className={` w-[8rem] mt-[10px] text-white-300 text-[12px] underline underline-offset-4 `}>
+                                    Anos de Experiência:
                                 </h1>
-                                <span className={` w-[50px] mt-[10px] text-white-300 text-[12px] `}>
-                                    Anos de Experiência 
-                                </span>
+                                <h1 className={` text-[35px] pt-[0.3rem] pr-[10px] pb-0 pl-0 `}>
+                                    {years}
+                                    <span className={` w-[50px] mt-[10px] text-white-300 text-[12px] p-[0.4rem] `}>
+                                    Ano(s)
+                                    </span> 
+                                    {months} 
+                                    <span className={` w-[50px] mt-[10px] text-white-300 text-[12px] p-[0.4rem] `}>
+                                    Meses 
+                                    </span> 
+                                    {/* {(new Date().getFullYear() - parseInt(usersInfo.tech_year))+1} */}
+                                </h1>
                             </div>
-                            <div data-aos="zoom-in-right" className={`w-[50%] mr-[20px] flex flex-row items-center justify-start`}>
-                                <h1 className={` text-[35px] pt-[10px] pr-[10px] pb-0 pl-0 `}>
+                            <div data-aos="zoom-in-right" className={`w-[50%] mr-[20px] flex flex-col items-start justify-start`}>
+                                <h1 className={` w-[8rem] mt-[10px] text-white-300 text-[12px] underline underline-offset-4 `}>
+                                    Projetos:
+                                </h1>
+                                <h1 className={` text-[35px] pt-[0.3rem] pr-[10px] pb-0 pl-0 `}>
                                     {reposcount}
                                 </h1>
-                                <span className={` w-[60px] mt-[10px] text-white-300 text-[12px] `}>
-                                    Projetos / Contribuições
-                                </span>
                             </div>
                         </div>
                         <div className="w-full h-auto mt-[60px]">

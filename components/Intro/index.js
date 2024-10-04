@@ -10,14 +10,10 @@ import usersInfo from "../../data/usersInfo.json"
 export default function Intro() {
 
     return (
-        <div className={`w-full h-auto p-0 relative top-[20px] mb-[100px]`}>
-            <div className={`w-full flex items-start justify-between flex-row`}> 
-                <div className={`w-full h-auto p-[10px] relative container md:w-[50%]`}>
-                    {/* boxes */}
-                    <IntroCards data={skills.skill} />
-                </div>
+        <div className={`w-full h-auto p-0 relative top-[2rem] mb-[2rem]`}>
+            <div className={`w-full flex flex-col sm:flex-row items-start justify-between `}> 
                 <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:w-[45%]`}>
-                    <p className={`text-[12px] text-white-200 `}>Introdução</p>
+                    <p className={`text-[12px] text-white-200 underline underline-offset-4`}>Introdução:</p>
                     <div className={`relative top-[20px]`}>
                         <h1 data-aos="zoom-in-up" className={`text-[35px] font-bold mb-[20px]`}>
                             {usersInfo.greeting_type}  Eu sou {usersInfo.full_name}.
@@ -37,7 +33,14 @@ export default function Intro() {
                         </Link>
                     </div>
                 </div>
+                
+                <div className={`w-full h-auto top-[20px] p-[10px] relative container md:w-[50%]`}>
+                    {/* boxes */}
+                    <p className={`text-[12px] mb-[2rem] text-white-200 underline underline-offset-4`}>Certificados:</p>
+                    <IntroCards data={skills.skill} />
+                </div>
             </div>
+
             {/* <div className={styles.companies}>
                 <img src="https://avatars.githubusercontent.com/u/104397777?s=200&v=4" className={styles.compImage} alt="" />
                 <img src="" className={styles.compImage} alt="" />
