@@ -6,9 +6,41 @@ import { FiMail } from "react-icons/fi"
 import usersInfo from "../../data/usersInfo.json"
 import { socials } from "../../data/socials.json"
 import avatar from "../../public/images/avatar/avatar.png"
+import { FaGlobe } from "react-icons/fa"; // Ícone de globo para tradução
 
 function NavBar() {
+    useEffect(() => {
+        // Verifica se o script já foi adicionado para evitar duplicatas
+        if (!document.getElementById("google-translate-script")) {
+            const script = document.createElement("script");
+            script.id = "google-translate-script"; // Define um ID para identificação única
+            script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+            script.async = true;
+            document.body.appendChild(script);
 
+            // Função para inicializar o Google Translate
+            window.googleTranslateElementInit = function () {
+                new window.google.translate.TranslateElement(
+                    {
+                        pageLanguage: "pt", // Idioma original da página
+                        includedLanguages: "en,pt", // Idiomas disponíveis
+                        layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE, // Layout padrão
+                    },
+                    "google_translate_element" // ID do elemento onde será renderizado
+                );
+            };
+        }
+    }, []);
+
+    // Função para mostrar/ocultar o widget
+    const toggleTranslate = () => {
+        const translateElement = document.getElementById("google_translate_element");
+        if (translateElement.style.display === "none") {
+            translateElement.style.display = "block";
+        } else {
+            translateElement.style.display = "none";
+        }
+    };
 
     return (
         <React.Fragment>
@@ -50,8 +82,36 @@ function NavBar() {
                                 <FiMail className={`mr-[10px] icon mail`} />
                                 <small>Email</small>
                             </a>}
-
                     </ul>
+                    {/* Ícone de tradução */}
+                    <div
+                        onClick={toggleTranslate} // Mostra/esconde o Google Translate ao clicar
+                        style={{ cursor: "pointer",
+                            fontSize: "20px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginLeft: "10px" }}
+                    >
+                        <FaGlobe />
+                    </div>
+
+                    {/* Elemento escondido do Google Translate */}
+                    <div
+                        id="google_translate_element"
+                        style={{
+                            display: "none", // Escondido por padrão
+                            position: "absolute",
+                            top: "50px", // Ajuste a posição conforme necessário
+                            right: "10px",
+                            zIndex: 999,
+                            backgroundColor: "#fff",
+                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                            borderRadius: "5px",
+                            padding: "5px",
+                            fontSize: "1rem", // Tamanho menor
+                            width: "auto",
+                        }}
+                    ></div>
                 </div>
                 <div className={`absolute top-[15px] right-[25px] md:hidden `}>
                     <img src={avatar.src} className={` w-[40px] rounded-[50%] border-[2px] border-solid border-green-100 bg-dark-100 `} />

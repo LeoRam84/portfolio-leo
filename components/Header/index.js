@@ -151,12 +151,23 @@ export default function Header({ children }) {
 }
 
 function ResumeViewer({ openResume }) {
+    const [resumeSource, setResumeSource] = useState("/CV/resume.pdf");
+    const [isEnglish, setIsEnglish] = useState(false);
 
     function dowloadCv() {
         let link = document.createElement("a")
-        link.href = "/CV/resume.pdf";
-        link.download = "Currículo Leonardo C. Ramidan";
+        link.href = resumeSource;
+        link.download = "Leonardo Corrêa Ramidan CV";
         link.click()
+    }
+
+    function toggleCvLanguage() {
+        if (isEnglish) {
+            setResumeSource("/CV/resume.pdf"); // Volta para o currículo em português
+        } else {
+            setResumeSource("/CV/resume_en.pdf"); // Exibe o currículo em inglês
+        }
+        setIsEnglish(!isEnglish); // Altera o estado para indicar qual currículo está sendo exibido
     }
 
     return (
@@ -164,10 +175,11 @@ function ResumeViewer({ openResume }) {
             <div id="box" className="w-[100%] h-[99%] mx-auto bg-dark-100 overflow-hidden rounded-md md:w-[70%]">
                 <div id="head" className="w-full h-auto p-3 bg-dark-200 flex items-start justify-start">
                     <h2>Meu Currículo / CV</h2>
+                    <button className="px-3 py-1 flex flex-row items-center justify-center bg-green-300 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  " onClick={toggleCvLanguage}>{isEnglish ? "Portuguese CV" : "English CV"}</button>
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-green-300 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  " onClick={dowloadCv}>Baixar</button>
                     <button className="px-3 py-1 flex flex-row items-center justify-center bg-red-500 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95] " onClick={openResume}>Sair</button>
                 </div>
-                <iframe src={"/CV/resume.pdf"} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
+                <iframe src={resumeSource} frameborder="0" className="w-full h-full overflow-scroll bg-white-200 mt-0"></iframe>
                 <br />
                 <br />
                 <br />
@@ -175,5 +187,3 @@ function ResumeViewer({ openResume }) {
         </div>
     )
 }
-
-
